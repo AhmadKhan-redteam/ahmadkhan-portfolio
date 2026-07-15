@@ -821,11 +821,10 @@ document.querySelectorAll('[data-spark]').forEach(el => {
 });
 
 /* ===== RESUME BUTTON PLACEHOLDER ===== */
-document.querySelectorAll('#resume-btn, #resume-btn-2').forEach(b=>{
-  b.addEventListener('click', e=>{
-    e.preventDefault();
-    alert('Add your resume PDF link here (e.g. /resume.pdf) to enable downloads.');
-  });
+document.querySelectorAll('#resume-btn, #resume-btn-2').forEach(button => {
+    button.href = "Ahmad Khan Resume.pdf";
+    button.target = "_blank";
+});
 });
 </script>
 
